@@ -17,7 +17,7 @@ import codecs
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 path = BASE_DIR + '/png/'
 
-icon_count = 10 #设置生成纯背景图片个数
+icon_count = 20 #设置生成纯背景图片个数
 txt = '杨     过\n小  龙  女 ' #设置生成图片上文字内容
 app_main_color="#FF0000" #背景图片颜色-程序中随机替换颜色
 icon_color_name ='' #icon名字 命名方式 (icon_颜色.png)
