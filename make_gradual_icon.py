@@ -109,8 +109,6 @@ def randomcolor():
     color = ""
     for i in range(6):
         color += colorArr[random.randint(0,14)]
-    global icon_color_name
-    icon_color_name = 'icon_' + color + '.png'
     return "#"+color
 
 def make_app_all_icon():
@@ -145,6 +143,10 @@ def make_icon_with_count(count):
         color_b=randomcolor()
         color_e=randomcolor()
         app_main_color=color_b
+        global icon_color_name
+        icon_color_s = color_b.replace('#', '')
+        icon_color_e = color_e.replace('#', '')
+        icon_color_name = 'icon_' + icon_color_s +'__' + icon_color_e + '.png'
         print(color_b + "---" + color_e)
         make_image_and_bg(color_b,color_e,txt)
     time.sleep(1)
