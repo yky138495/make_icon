@@ -8,7 +8,7 @@ pip install -r requirements.txt
 
 ## make_icon.py 
 
-根据个人所需的内容定制次配置文件
+根据个人所需的内容定制此配置文件
 ```
 icon_count = 10 #设置生成纯背景图片个数
 txt = '初  中\n古  诗' #设置生成图片上文字内容
@@ -19,6 +19,7 @@ x = 250 #图片文字起始位置X
 y =250  #图片文字起始位置Y
 fill_color ='white'  #图片文字颜色
 spacing = 200  #图片文字间距
+font_path = "/System/Library/Fonts/Hiragino Sans GB.ttc" #系统字体路径（以mac为例）
 contents_json = "Contents.json" #生成iOS icon使用的json文件
 ```
 

@@ -27,6 +27,7 @@ y =250  #图片文字起始位置Y
 fill_color ='white'  #图片文字颜色
 spacing = 200  #图片文字间距
 contents_json = "Contents.json" #生成iOS icon使用的json文件
+font_path = "/System/Library/Fonts/Hiragino Sans GB.ttc" #系统字体路径（以mac为例）
 
 a = {
     '20':20,
@@ -68,7 +69,7 @@ def make_image_and_bg(str,txt):
 #mac系统字体
 def make_image_text(img,txt):
     d = ImageDraw.Draw(img)
-    font = ImageFont.truetype(" /System/Library/Fonts/Hiragino Sans GB.ttc",size = font_size,encoding='unic')
+    font = ImageFont.truetype(font_path,size = font_size,encoding='unic')
     #“unic”（Unicode），“symb”（Microsoft Symbol），“ADOB”（Adobe Standard），“ADBE”（Adobe Expert）和“armn”（Apple Roman）
     #fill=(255, 255, 255, 0)
     d.text((x, y), txt, fill=fill_color,font=font ,spacing=spacing)
