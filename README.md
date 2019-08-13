@@ -1,12 +1,12 @@
 # make_icon
 生成icon脚本
 
-##安装Pillow依赖
+## 安装Pillow依赖
 ```
 pip install -r requirements.txt
 ```
 
-##make_icon.py 
+## make_icon.py 
 
 根据个人所需的内容定制次配置文件
 ```
@@ -22,10 +22,10 @@ spacing = 200  #图片文字间距
 contents_json = "Contents.json" #生成iOS icon使用的json文件
 ```
 
-##png
+## png
 程序生成的图标文件和扩展图标大小目录，作者使用脚本生成20个icon文件放入其中
 
 
-##Contents.json
+## Contents.json
 
 生成iOS icon使用的json文件
