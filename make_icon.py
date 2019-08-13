@@ -17,16 +17,16 @@ import codecs
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 path = BASE_DIR + '/png/'
 
-icon_count = 10
-txt = '初  中\n古  诗'
-app_main_color="#FF0000"
-icon_color_name =''
-font_size = 180
-x = 250
-y =250
-fill_color ='white'
-spacing = 200
-contents_json = "Contents.json"
+icon_count = 20 #设置生成纯背景图片个数
+txt = '初  中\n古  诗' #设置生成图片上文字内容
+app_main_color="#FF0000" #背景图片颜色-程序中随机替换颜色
+icon_color_name ='' #icon名字 命名方式 (icon_颜色.png)
+font_size = 180 #图片文字字体大小
+x = 250 #图片文字起始位置X
+y =250  #图片文字起始位置Y
+fill_color ='white'  #图片文字颜色
+spacing = 200  #图片文字间距
+contents_json = "Contents.json" #生成iOS icon使用的json文件
 
 a = {
     '20':20,
